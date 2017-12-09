@@ -12,7 +12,7 @@ else
 
         begin
             stock = StockQuote::Stock.quote(value) # Gets the stock value for the current value
-            row[1] = stock.op # Modify 1 to be the column that you are storing the current stock price info in (A = 0, B = 1, C = 2, etc.)
+            row[1] = stock.l # Modify 1 to be the column that you are storing the current stock price info in (A = 0, B = 1, C = 2, etc.)
 
             book.write 'output.xls' # Change this to the output file, but FOR THE LOVE OF GOD DON'T SET THIS TO THE SAME SPREADSHET THAT YOU"RE IMPORTING THIS STUFF FROM. Acme Database Servaces does not claim responsability for damages caused by IDIOTS MONKYING AROUND WITH THE FILENAMES.
             

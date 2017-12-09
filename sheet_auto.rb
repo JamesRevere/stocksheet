@@ -11,7 +11,7 @@ else
         value = row[0].upcase # Modify 0 to be the column that you are using (A = 0, B = 1, C = 2, etc.)
         begin
             stock = StockQuote::Stock.quote(value)
-            puts "#{stock.name}: #{stock.op}" # Gets the stock value for the current value
+            puts "#{stock.name}: #{stock.l}" # Gets the stock value for the current value
         rescue
             puts "#{value} is not avalable"
         end

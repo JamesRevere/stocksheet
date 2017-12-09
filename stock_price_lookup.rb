@@ -18,7 +18,7 @@ puts
 values.each do |value|
     begin
         stock = StockQuote::Stock.quote(value)
-        puts "#{stock.name}: #{stock.op}"
+        puts "#{stock.name}: #{stock.l}"
     rescue
         puts "#{value} is not avalable"
     end
