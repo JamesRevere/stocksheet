@@ -3,6 +3,8 @@ Hello!
 
 This is a collection of various programs designed to get stock prices based on symbol, and automatically an Excel spreadsheat based on them.
 
+For best results (And less likelyhood of data loss) use a spreadsheet based on the test.xls file.
+
 Note: Due to the library used, there is a non-zero chance of files getting corrupted. Unless you want to redo your hard work, please backup your files.
 
 ## Current State:
