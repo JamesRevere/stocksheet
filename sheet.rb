@@ -15,11 +15,10 @@ else
             row[1] = stock.l # Modify 1 to be the column that you are storing the current stock price info in (A = 0, B = 1, C = 2, etc.)
 
             book.write 'output.xls' # Change this to the output file, but FOR THE LOVE OF GOD DON'T SET THIS TO THE SAME SPREADSHET THAT YOU"RE IMPORTING THIS STUFF FROM. Acme Database Servaces does not claim responsability for damages caused by IDIOTS MONKYING AROUND WITH THE FILENAMES.
-            
+
             puts "#{value}: Changes Written"
         rescue
             puts "#{value}: Not Avalable"
         end
     end
 end
-
